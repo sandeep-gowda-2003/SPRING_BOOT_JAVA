@@ -1,0 +1,9 @@
+package com.practice.response;
+
+import org.springframework.context.annotation.Bean;
+
+public class AddressResponse {
+	private Integer id;
+	private String city;
+	private String state;
+}

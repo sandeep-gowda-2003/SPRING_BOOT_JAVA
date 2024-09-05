@@ -1,0 +1,7 @@
+package com.infosys.student;
+
+public class College {
+	private String cname;
+	private String city;
+	private Student student;
+}

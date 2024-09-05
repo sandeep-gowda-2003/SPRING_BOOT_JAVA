@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EmailService&apos; to &apos;ImportResource_Annotation&apos;" description="Rename resource &apos;EmailService&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/EmailService" name="ImportResource_Annotation" stamp="1715594401187" updateReferences="true"/>
+</session>

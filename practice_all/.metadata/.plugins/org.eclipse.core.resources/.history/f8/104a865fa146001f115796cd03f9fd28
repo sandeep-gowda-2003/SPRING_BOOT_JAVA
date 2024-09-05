@@ -1,0 +1,21 @@
+spring.application.name=EurekaServerApplication-practice
+#server.port=8761
+#eureka.client.fetchRegistry=false
+#eureka.client.register-with-eureka=false
+#eureka.instance.hostname=localhost
+#eureka.instance.preferIpAddress=true
+#eureka.instance.instance-id=MicroService1:${spring.cloud.client.ip-address}:${server.port}
+#spring.cloud.inetutils.prefer-ip-address=true
+#
+##
+##
+#management.tracing.sampling.probability=0.1
+#logging.pattern.level=%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]
+
+
+
+eureka.instance.hostname=127.0.0.1
+eureka.instance.preferIpAddress=true
+eureka.instance.ipAddress=127.0.0.1
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true

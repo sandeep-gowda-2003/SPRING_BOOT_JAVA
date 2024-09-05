@@ -1,0 +1,10 @@
+package com.infosys.pojo;
+
+public class CustomerImpl implements Customer{
+
+	@Override
+	public void addCustomer() {
+		System.out.println("addcustomer() is called");
+	}
+
+}

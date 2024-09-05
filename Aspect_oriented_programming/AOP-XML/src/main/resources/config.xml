@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<aop:aspectj-autoproxy />
+	<bean id="businessBean" class="com.infosys.pojo.BusinessClass"></bean>
+	<bean id="aspectBean" class="com.infosys.pojo.AspectClass"></bean>
+<!-- 
+	<aop:config>
+		<aop:aspect id="myaspect" ref="aspectBean">
+			<aop:pointcut expression="execution(* com.infosys.pojo.BusinessClass.welcome(..))" id="pointCutBefore" />
+			<aop:before method="myAdvice" pointcut-ref="pointCutBefore" />
+		</aop:aspect>
+	</aop:config>
+	
+	<aop:config>
+		<aop:aspect id="myaspect1" ref="aspectBean">
+			<aop:pointcut expression="execution(* com.infosys.pojo.BusinessClass.welcome(..))" id="pointCutAfter" />
+			<aop:after method="myAdvice" pointcut-ref="pointCutAfter" />
+		</aop:aspect>
+	</aop:config>
+	 -->
+	<aop:config> 
+		<aop:aspect id="myaspect2" ref="aspectBean">
+			<aop:pointcut expression="execution(* com.infosys.pojo.BusinessClass.sum(..))" id="pointCutAfterReturning" />
+			<aop:after-returning method="myAdvice" pointcut-ref="pointCutAfterReturning" returning="result" />
+		</aop:aspect>
+	</aop:config>
+</beans>

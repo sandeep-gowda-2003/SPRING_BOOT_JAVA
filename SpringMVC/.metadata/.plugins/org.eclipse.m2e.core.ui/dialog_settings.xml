@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\WORKS_SPACE\eclipse\Dylan\Blog-Rest_ExceptionHandling\Blog-Rest_ExceptionHandling"/>
+			<item value="D:\WORKS_SPACE\eclipse\Dylan\Exer_rest\Exer_rest"/>
+			<item value="D:\WORKS_SPACE\eclipse\Dylan\MVC_form"/>
+			<item value="D:\WORKS_SPACE\eclipse\Dylan\MVC_form\MVC_form"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\Department-Rest\Department-Rest"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\User-Rest\User-Rest"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\feignClient-Product\feignClient-Product"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\feignClient-Orders\feignClient-Orders"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\feignClient-Employees\feignClient-Employees"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\feignClient-Address\feignClient-Address"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\RestCustomerAPI\RestCustomerAPI"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\MVC-1\MVC-1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

@@ -1,0 +1,6 @@
+package com.infosys.pojo;
+
+public class EmailService {
+	private String message;
+	private String type;
+}

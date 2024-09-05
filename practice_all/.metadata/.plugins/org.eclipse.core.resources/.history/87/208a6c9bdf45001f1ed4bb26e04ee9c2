@@ -1,0 +1,16 @@
+package com.practice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.practice.entity.Address;
+import com.practice.repository.AddressRepository;
+
+public class AddressService {
+	@Autowired
+	private AddressRepository repo;
+	
+	public String fetchbyid(int id) {
+		Address a=repo.findById(id);
+		return a.getState();
+	}
+}

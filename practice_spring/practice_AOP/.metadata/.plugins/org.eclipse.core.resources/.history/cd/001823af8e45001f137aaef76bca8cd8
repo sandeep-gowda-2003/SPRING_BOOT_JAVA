@@ -1,0 +1,12 @@
+package com.sandeep;
+
+import org.springframework.context.ApplicationContext;
+
+public class EmpMain {
+
+	public static void main(String[] args) {
+		ApplicationContext context= new AnnotationConfigApplicationContext(Employee.class);
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.capgemini.Exception_handling;
+
+public class TryCatch {
+
+}

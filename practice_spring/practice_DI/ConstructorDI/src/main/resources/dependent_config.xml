@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="address1" class="com.sandeep.dependentObject.Address">
+       	<constructor-arg name="state" value="Karnataka"></constructor-arg>
+       	<constructor-arg name="city" value="Bengaluru"></constructor-arg>
+       </bean>
+       <bean id="student" class="com.sandeep.dependentObject.Student">
+       	<constructor-arg name="sid" value="101"></constructor-arg>
+       	<constructor-arg name="sname" value="Sandy"></constructor-arg>
+       	<constructor-arg>
+       		<ref bean="address1" />
+       	</constructor-arg>
+       </bean>
+</beans>

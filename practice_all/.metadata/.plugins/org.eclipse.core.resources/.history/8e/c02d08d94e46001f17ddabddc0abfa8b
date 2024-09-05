@@ -1,0 +1,4 @@
+spring.application.name=EurekaServerApplication-practice
+server.port=9999
+eureka.client.fetchRegistry=true
+eureka.client.register-with-eureka=false

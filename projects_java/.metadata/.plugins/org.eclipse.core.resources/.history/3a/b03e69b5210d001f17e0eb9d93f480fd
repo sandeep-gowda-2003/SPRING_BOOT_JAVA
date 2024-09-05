@@ -1,0 +1,10 @@
+package com.infosys.student;
+
+import lombok.AllArgsConstructor;
+
+@Data
+@AllArgsConstructor
+public class Student {
+	private Integer sid;
+	private String sname;
+}

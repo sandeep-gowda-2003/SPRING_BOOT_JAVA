@@ -1,0 +1,47 @@
+server:
+  port: 9000
+  
+spring:
+  application:
+    name: ApplicationGateway-practice
+    
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          - enabled=true
+          - lower-case-service-id=true
+        routes:
+        - id: MICROSERVICE1
+          uri: lb://MICROSERVICE1
+          predicates:
+            - Path=/MICROSERVICE1/student/**
+          filters:
+            - RewritePath=/MICROSERVICE1/(?<segment>.*), /$\\{segment}
+        - id: MICROSERVICE2
+          uri: lb://MICROSERVICE2
+          predicates:
+            - Path=/MICROSERVICE2/address/**
+          filters:
+            - RewritePath=/MICROSERVICE2/(?<segment>.*), /$\\{segment}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#This configuration is for enabling the discovery locator in Spring Cloud Gateway,
+# which allows it to dynamically route to services registered in a service registry (like Eureka)
+
+#if you prefer hardcode it
+#cloud:
+#  gateway:
+#    routes:
+#      - id: MicroService1-Student
+#        uri: http://localhost:8081
+#        predicates:
+#          - Path= /student/**
+#          
+#      - id: MicroService2-Address
+#        uri: http://localhost:8082
+#        predicates:
+#          - Path= /address/**

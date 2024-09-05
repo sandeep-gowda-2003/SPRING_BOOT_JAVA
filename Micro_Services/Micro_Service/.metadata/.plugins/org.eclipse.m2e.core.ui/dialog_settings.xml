@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\WORKS_SPACE\eclipse\Dylan\MVC_form\MVC_form"/>
+			<item value="D:\WORKS_SPACE\eclipse\Spring\start_spring_io\unzipped\Application-Gateway\Application-Gateway"/>
+			<item value="D:\WORKS_SPACE\eclipse\Spring\start_spring_io\unzipped\RestCustomerAPI\RestCustomerAPI"/>
+			<item value="D:\WORKS_SPACE\eclipse\Spring\start_spring_io\unzipped\feignClient-Orders\feignClient-Orders"/>
+			<item value="D:\WORKS_SPACE\eclipse\Spring\start_spring_io\unzipped\feignClient-Product\feignClient-Product"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\ApplicationGateway1-715\ApplicationGateway1-715"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\MSApplication2\MSApplication2"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\Microservice2\Microservice2"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\MSApplication1\MSApplication1"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\EurekaServerApplication715\EurekaServerApplication715"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\Application-Gateway\Application-Gateway"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\Eureka-Server-Application\Eureka-Server-Application"/>
+			<item value="D:\WORKS_SPACE\eclipse\start_spring_io\unzipped\Demostration-service\Demostration-service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

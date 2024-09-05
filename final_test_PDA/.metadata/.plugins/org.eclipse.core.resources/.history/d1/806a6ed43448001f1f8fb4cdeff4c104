@@ -1,0 +1,24 @@
+package com.infosys.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.infosys.entity.BookService;
+import com.infosys.repository.BookRepository;
+
+@Service
+public class BookServiceService {
+	@Autowired
+	private BookRepository brepo;
+	
+	public String insertBook(BookService b) {
+		BookService a=brepo.saveAndFlush(b);
+		if(a!=null) {
+			return "successfull Insertion";
+		}
+		else {
+			return "failure";
+			
+		}
+	}
+}

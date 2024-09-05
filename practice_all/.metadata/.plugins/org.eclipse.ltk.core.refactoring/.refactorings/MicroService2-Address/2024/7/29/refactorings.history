@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.practice.config.entity&apos; to &apos;com.practice.entity&apos;&#x0D;&#x0A;- Original project: &apos;MicroService2_Address&apos;&#x0D;&#x0A;- Original element: &apos;MicroService2_Address/src/main/java/com.practice.config.entity&apos;&#x0D;&#x0A;- Renamed element: &apos;MicroService2_Address/src/main/java/com.practice.entity&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.practice.config.entity&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.practice.config.entity" name="com.practice.entity" qualified="false" references="true" stamp="1721399882189" textual="false" version="1.0"/>
+</session>

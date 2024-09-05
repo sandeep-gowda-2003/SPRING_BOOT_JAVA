@@ -1,0 +1,67 @@
+package com.practice.service;
+
+import java.util.Optional;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.practice.entity.Student;
+import com.practice.feignclient.AddressClient;
+import com.practice.repository.StudentRepository;
+import com.practice.response.AddressResponse;
+import com.practice.response.StuAdress;
+import com.practice.response.StudentResponse;
+
+@Service
+public class StudentService {
+	@Autowired
+	private StudentRepository repo;
+	
+	@Autowired
+	private AddressClient client;
+	
+	@Autowired
+	private ModelMapper mapper;
+	
+	public String insertOne(StuAdress s) {
+		Student s1=new Student();
+		s1.setName(s.getName());
+		s1.setCourse(s.getCourse());
+		AddressResponse a=new AddressResponse();
+		a.setCity(s.getCity());
+		a.setState(s.getState());
+		System.out.println("before emp");
+		System.out.println(client.insert(a));
+		ResponseEntity<AddressResponse> add=client.insert(a);
+		System.out.println("after emp1");
+		s1.setAddress(add.getBody().getId());
+		repo.save(s1);
+		System.out.println("after emp");
+		return "successfull Insertion";
+	}
+	
+	public Student insert(Student s) {
+		Student s1=new Student();
+		s1.setName(s.getName());
+		s1.setCourse(s.getCourse());
+		s1.setAddress(s.getAddress());
+		s1=repo.save(s1);
+		return s1;
+		
+	}
+	
+	public StudentResponse fetchbyId(Integer id) {
+		Optional<Student> s=repo.findById(id);
+		StudentResponse s1=mapper.map(s.get(), StudentResponse.class);
+		return s1;
+		
+	}
+	public StuAdress fetchall(Integer id) {
+		Optional<Student> s=repo.findById(id);
+		StudentResponse s1=mapper.map(s.get(), StudentResponse.class);
+		AddressResponse a=client.fetchbyId((Integer.parseInt(s1.getAddress());
+		
+	}
+}

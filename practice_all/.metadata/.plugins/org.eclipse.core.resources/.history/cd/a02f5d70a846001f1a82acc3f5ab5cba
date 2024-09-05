@@ -1,0 +1,42 @@
+server:
+  port: 8083
+  
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+  application:
+    name: ApplicationGateway-practice
+    
+  cloud:
+    gateway:
+      routes:
+        - id: MicroService1-Student
+          uri: http://localhost:8081
+          predicates:
+            - Path= /student/**
+          
+        - id: MicroService2-Address
+          uri: http://localhost:8082
+          predicates:
+            - Path= /address/**
+
+        
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true
+    
+
+management:
+  tracing:
+    sampling:
+      probability=0.1
+logging:
+  pattern:
+    level=%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]

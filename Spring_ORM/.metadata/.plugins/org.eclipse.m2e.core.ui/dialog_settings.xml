@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\JPA_ORM\ORM"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\JPA_ORM\JPA_ORM"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\JPQL\JPQL"/>
+			<item value="D:\WORKS_SPACE\New folder\JPQL\JPQL"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\QueryTransaction\QueryTransaction"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\QueryMethods\QueryMethods"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\assignment_orm\assignment_orm"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\Assignment_orm\Assign_ORM"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\Pagination\Pagination"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\JPA_Repository\JPA_Repository"/>
+			<item value="D:\WORKS_SPACE\eclipse\jdbc\ORM\ORM"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

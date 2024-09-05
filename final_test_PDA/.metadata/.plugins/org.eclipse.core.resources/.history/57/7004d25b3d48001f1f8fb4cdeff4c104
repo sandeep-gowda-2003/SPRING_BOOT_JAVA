@@ -1,0 +1,48 @@
+package com.infosys.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.infosys.entity.LibraryService;
+import com.infosys.repository.LibraryRepository;
+
+@Service
+public class LibraryServiceService {
+	@Autowired
+	private LibraryRepository brepo;
+	
+	public String insertLib(LibraryService b) {
+		System.out.println(b.getLibrary_name());
+		LibraryService a=brepo.saveAndFlush(b);
+		if(a!=null) {
+			return "successfull Insertion";
+		}
+		else {
+			return "failure";
+			
+		}
+	}
+	public List<LibraryService> fetchall(){
+		List<LibraryService> b=new ArrayList<LibraryService>();
+		b=brepo.findAll();
+		return b;
+	}
+	public LibraryService fetchbyId(Integer id){
+		Optional<LibraryService> b=brepo.findById(id);
+		return b.get();
+	}
+	public List<LibraryService> deletebyId(Integer id){
+		brepo.deleteById(id);
+		List<LibraryService> b=new ArrayList<LibraryService>();
+		b=brepo.findAll();
+		return b;
+	}
+	public String updatebyId(LibraryService b){
+		brepo.updatebook(b.getBook_name(), b.getAuthor_name(), b.getPublication_year(), b.getBook_id());
+		return "successfully updated";
+	}
+}

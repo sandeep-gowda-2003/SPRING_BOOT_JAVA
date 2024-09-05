@@ -1,0 +1,23 @@
+package com.practice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.netflix.discovery.converters.Auto;
+import com.practice.response.StuAdress;
+import com.practice.service.StudentService;
+
+@RestController
+public class StudentController {
+	
+	@Autowired
+	private StudentService service;
+	
+	@PostMapping(value="/insert",consumes="application/json")
+	public ResponseEntity<String> in(@RequestBody StuAdress s){
+		return service.insertOne(s);
+	}
+}

@@ -1,0 +1,32 @@
+package com.practice.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.practice.entity.Student;
+import com.practice.feignclient.AddressClient;
+import com.practice.repository.StudentRepository;
+import com.practice.response.StuAdress;
+
+@Service
+public class StudentService {
+	@Autowired
+	private StudentRepository repo;
+	
+	@Autowired
+	private AddressClient client;
+	
+	@Autowired
+	private ModelMapper mapper;
+	
+	public String insertOne(StuAdress s) {
+		Student s1=new Student();
+		s1.setName(s.getName());
+		s1.setCourse(s.getCourse());
+		ResponseEntity<String> add=
+		repo.save(s);
+		return "successfull Insertion";
+	}
+}

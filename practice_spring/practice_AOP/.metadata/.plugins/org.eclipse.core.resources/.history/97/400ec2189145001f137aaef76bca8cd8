@@ -1,0 +1,32 @@
+package com.sandeep;
+
+import org.springframework.stereotype.Component;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class EmployeeImpl implements Employee{
+
+	private int empNo,basicPay,da,hra,tax;
+	@Override
+	public void display() {
+		System.out.println("emp No: "+empNo+"\nbasic pay: "+basicPay
+				+"da: "+da+"\nhra: "+hra+"\ntax: "+tax);
+	}
+
+	@Override
+	public int gross_sal() {
+		return basicPay+da;
+	}
+
+	@Override
+	public int netsal() {
+		// TODO Auto-generated method stub
+		return (basicPay+da-hra-tax);
+	}
+
+}

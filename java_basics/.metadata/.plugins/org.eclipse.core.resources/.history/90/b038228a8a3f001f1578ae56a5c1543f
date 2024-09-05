@@ -1,0 +1,7 @@
+//Program to demonstrate try multiple catch block
+
+package com.capgemini.Exception_handling;
+
+public class TryCatch {
+	
+}

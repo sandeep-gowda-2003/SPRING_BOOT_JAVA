@@ -1,0 +1,49 @@
+package com.infosys.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.infosys.entity.Customer;
+
+@Service
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public List<Customer> fetchAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer getById(Integer cid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Customer save(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String DeleteById(Integer cid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> fetchCustomerDetails(Integer custid, String fname) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(String fname, String lname, String email, String contactnumber, Boolean active,
+			Integer creditpoints, Integer custid) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

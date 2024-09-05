@@ -1,0 +1,8 @@
+package com.infosys.feignClient;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient()
+public class BookFeignClient {
+
+}

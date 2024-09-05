@@ -1,0 +1,22 @@
+package com.infosys.pojo;
+
+import org.aopalliance.intercept.Joinpoint;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+
+// this class is the cross cutting aspect class
+@Aspect
+public class LoggingAspect {
+	@Pointcut("execution(* Customer.*(..))")
+	public void point() {
+		
+	}
+	
+	@Before("execution(* com.infosys.pojo.Customer.addCustomer(..))")
+	public void logBefore(JoinPoint joinPoint) {
+		System.out.println("logBefore() is running");
+		System.out.println("hijacked: "+joinPoint.getSignature().getName());
+	}
+}

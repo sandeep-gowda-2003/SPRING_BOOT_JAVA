@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "address1" class= "com.infosys.demo.Address">
+    	<property name="city" value="Bangalore"></property>
+    	<property name="state" value="Karnataka"></property>
+    </bean>
+    <!-- <bean id = "address" class= "com.infosys.demo.Address">
+    	<property name="city" value="Bangalore"></property>
+    	<property name="state" value="Karnataka"></property>
+    </bean> -->
+    <!-- there cannot be two bean id for same class in byType -->
+    <bean id= "employee" class= "com.infosys.demo.Employee" autowire="byType">
+    	<property name="empId" value="80"></property>
+    </bean>
+</beans>

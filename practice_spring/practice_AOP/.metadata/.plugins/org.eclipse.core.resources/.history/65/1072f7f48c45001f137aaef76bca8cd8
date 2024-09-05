@@ -1,0 +1,12 @@
+package com.sandeep;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class LoggingAspect {
+	@Pointcut("execute(* Employee.*(..))")
+	public void empl() {
+		
+	}
+}

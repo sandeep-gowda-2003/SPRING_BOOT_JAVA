@@ -1,0 +1,24 @@
+package com.sandeep.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
+
+import com.sandeep.model.Employee;
+import com.sandeep.model.EmployeeMapper;
+
+@Component
+public class Emp_DAOImpl implements Emp_DAO{
+	
+	@Autowired
+	private JdbcTemplate jdbc_temp;
+
+	@Override
+	public List<Employee> fetch_all() {
+		System.out.println("in fetchall");
+		return jdbc_temp.query("SELECT * from employee_jpa", new EmployeeMapper());
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.infosys.pojo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class User {
+	
+	@Lookup
+	public Role createRole() {
+		return null;
+	}
+	
+	public String assignRole(String name) {
+		Role role = createRole();
+	}
+}

@@ -1,0 +1,10 @@
+package com.infosys.response;
+
+public class BookResponse {
+
+	private Integer book_id;
+	private String book_status;
+	private String book_name;
+	private String author_name;
+	private Integer Publication_year;
+}

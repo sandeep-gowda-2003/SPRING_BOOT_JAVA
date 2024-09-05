@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;XML_DI&apos;" deleteContents="false" description="Delete resource &apos;XML_DI&apos;" element1="/XML_DI" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1715592047801"/>&#x0A;<refactoring comment="Rename resource &apos;Country&apos; to &apos;Referencing_annotation&apos;" description="Rename resource &apos;Country&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Country" name="Referencing_annotation" stamp="1715594706258" updateReferences="true"/>
+</session>

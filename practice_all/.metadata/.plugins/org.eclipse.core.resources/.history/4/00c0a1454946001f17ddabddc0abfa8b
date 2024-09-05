@@ -1,0 +1,18 @@
+package com.practice.feignclient;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.practice.response.AddressResponse;
+
+@FeignClient(name = "MicroService2-Address",url = "http://localhost:8081")
+public interface AddressClient {
+	@PostMapping("/insert")
+	public ResponseEntity<AddressResponse> insert(@RequestBody AddressResponse a);
+
+	@GetMapping("/fetch")
+	public AddressResponse fetchbyId(Integer id);
+}

@@ -1,0 +1,24 @@
+package com.sandeep;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.sandeep.config.EmpConfig;
+import com.sandeep.dao.Emp_DAO;
+import com.sandeep.model.Employee;
+
+public class JDBC_emp_application {
+	
+	public static void main(String[] args) {
+		ApplicationContext context=new AnnotationConfigApplicationContext(EmpConfig.class);
+		Emp_DAO e=context.getBean(Emp_DAO.class);
+		List<Employee> l=e.fetch_all();
+		System.out.println("in for");
+		for(Employee e1:l){
+			System.out.println("data");
+			System.out.println("data:"+e1);
+		}
+	}
+}

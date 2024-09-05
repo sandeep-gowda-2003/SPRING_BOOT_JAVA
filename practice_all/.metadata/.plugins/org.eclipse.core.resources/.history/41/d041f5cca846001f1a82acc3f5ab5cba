@@ -1,0 +1,15 @@
+server:
+  port: 9000
+  
+spring:
+  application:
+    name: ApplicationGateway-practice
+    
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled=true
+
+        
+

@@ -1,0 +1,5 @@
+package com.infosys.feignClient;
+
+public class BookFeignClient {
+
+}

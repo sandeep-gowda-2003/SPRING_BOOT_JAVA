@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="student" class="com.infosys.student.Student">
+		<property name="sid" value="101"></property>
+		<property name="sname" value="Amit"></property>
+	</bean>
+	<bean id="college_name" class="com.infosys.student.College"
+		autowire="byName">
+		<property name="cname" value="DBIT"></property>
+		<property name="city" value="Bengaluru"></property>
+	</bean>
+	<bean id="college_type" class="com.infosys.student.College"
+		autowire="byType">
+		<property name="cname" value="DBIT"></property>
+		<property name="city" value="Bengaluru"></property>
+	</bean>
+	<bean id="student" class="com.infosys.student.Student">
+		<constructor-arg name="sid" value="101"></constructor-arg>
+		<constructor-arg name="sname" value="Sandeep"></constructor-arg>
+	</bean>
+	<bean id="college_constructor" class="com.infosys.student.College"
+		autowire="constructor">
+		<constructor-arg name="cname" value="DBIT"></constructor-arg>
+		<constructor-arg name="city" value="Bengaluru"></constructor-arg>
+	</bean>
+
+</beans>

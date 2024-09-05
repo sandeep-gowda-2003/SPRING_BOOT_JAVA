@@ -1,0 +1,13 @@
+package com.infosys.config;
+
+public class AppConfig {
+
+}
+
+//customer table
+//firstname lastname pnr flightname seatno
+//
+//flight table
+//pnr flightname source destination
+//
+//karthik.2801539@edgeverve.com

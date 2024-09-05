@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="address1" class="com.sandeep.byConstructor.Address">
+       	<constructor-arg value="Bengaluru" index="0"></constructor-arg>
+       	<constructor-arg value="678987" index="1"></constructor-arg>
+       </bean>
+       <bean id="employee" class="com.sandeep.byConstructor.Employee" autowire="constructor">
+       	<constructor-arg value="sandeep"></constructor-arg>
+       </bean>
+</beans>

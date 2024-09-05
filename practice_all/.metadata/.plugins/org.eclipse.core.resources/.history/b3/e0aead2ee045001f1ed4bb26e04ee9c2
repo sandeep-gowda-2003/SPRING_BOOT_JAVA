@@ -1,0 +1,25 @@
+package com.practice.service;
+
+import java.lang.classfile.ClassFile.Option;
+import java.util.Optional;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.practice.entity.Address;
+import com.practice.repository.AddressRepository;
+import com.practice.response.AddressResponse;
+
+public class AddressService {
+	@Autowired
+	private AddressRepository repo;
+	
+	@Autowired
+	private ModelMapper mapper;
+	
+	public String fetchbyid(int id) {
+		Optional<Address> a=repo.findById(id);
+		AddressResponse addressresonse=mapper.map(a, AddressResponse.class);
+		return addressresonse.getState();
+	}
+}

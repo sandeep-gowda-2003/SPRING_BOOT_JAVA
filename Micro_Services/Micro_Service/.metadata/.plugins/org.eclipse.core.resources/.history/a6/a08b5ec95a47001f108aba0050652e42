@@ -1,0 +1,49 @@
+server:
+  servlet:
+    context-path: /
+  port: 9056
+  
+spring:
+  application:
+    name: Application-Gateway1
+  profiles:
+    active:
+      - default
+      
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      routes:
+        - id: MSApplication1
+          uri: http://localhost:8081
+          predicates:
+            - Path= /employee/**
+          filters:
+            - AddRequestHeader=first-request,first-request-header
+            - AddResponseHeader=first-response,first-response-header
+            
+        - id: MSApplication2
+          uri: http://localhost:8082
+          predicates:
+            - Path= /consumer/**
+          filters:
+            - AddRequestHeader=second-request,second-request-header
+            - AddResponseHeader=second-response,second-response-header
+         
+management:
+  tracing:
+    sampling:
+      probability=0.1
+logging:
+  pattern:
+    level=%5p [${spring.application.name:},%X{traceId:-},%X{springId:-}]
+            
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9099/eureka
+  instance:
+    prefer-ip-address: true

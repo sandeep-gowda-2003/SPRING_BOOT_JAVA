@@ -1,0 +1,29 @@
+package com.practice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.practice.entity.Address;
+import com.practice.service.AddressService;
+
+@RestController
+public class AddressController {
+	@Autowired
+	private AddressService service;
+	
+	@GetMapping("/get/{id}")
+	public String fetch(@PathVariable("id") int id){
+		return service.fetchbyid(id);
+	}
+	
+	@PostMapping("/insert")
+	public String push(@RequestBody Address address) {
+		if(service.insert(address))
+			return "successfull";
+	}
+	
+}

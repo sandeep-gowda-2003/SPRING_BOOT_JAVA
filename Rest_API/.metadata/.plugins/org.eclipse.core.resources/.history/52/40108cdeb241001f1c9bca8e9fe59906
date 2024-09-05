@@ -1,0 +1,21 @@
+package com.infosys.entity;
+
+import org.antlr.v4.runtime.misc.NotNull;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+
+public class Customer {
+	@Id
+	@Column(name = "customer_id")
+//	@NotNull(message="cust_id not null")
+	private Integer cid;
+	private Boolean active;
+	private Integer creditpoints;
+	@Column(name = "first_name")
+	private String fname;
+	@Column(name="last_name")
+	private String lname;
+	private String email;
+	private String contactnumber;
+}

@@ -1,0 +1,5 @@
+package com.sandeep.dao;
+
+public class Emp_DAOImpl implements Emp_DAO{
+
+}

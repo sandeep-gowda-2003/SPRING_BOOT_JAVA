@@ -1,0 +1,23 @@
+package com.sandeep;
+
+public class EmployeeImpl implements Employee{
+
+	private int empNo,basicPay,da,hra,tax;
+	@Override
+	public void display() {
+		System.out.println("emp No: "+empNo+"\nbasic pay: "+basicPay
+				+"da: "+da+"\nhra: "+hra+"\ntax: "+tax);
+	}
+
+	@Override
+	public int gross_sal() {
+		return basicPay+da;
+	}
+
+	@Override
+	public int netsal() {
+		// TODO Auto-generated method stub
+		return (basicPay+da-hra-tax);
+	}
+
+}

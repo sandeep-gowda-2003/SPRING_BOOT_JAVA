@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\ImportResource_Annotation"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\Annotations"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\CompanyDetails"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\SetterDI\src\main\java\ApplicationConfig.xml"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\BeanInheritance\src\main\java\com\infosys\pojo\Main.java"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\CompanyDetails\src\main\java\com\infosys\pojo\Test.java"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\EmployeeInfo\src\main\java\com\infosys\entity\Employee.java"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\mobilecalls\src\main\java\com\infosys\entity\Main.java"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\customer_service\src\main\java\com\infosys\customer1\CustomerServiceImpl.java"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\Employeeinformation\src\main\java\com\infosys\entity\Employee.java"/>
+			<item value="D:\WORKS_SPACE\eclipse\projects_java\utils\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.infosys"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="LookUp"/>
+			<item value="EmailService"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

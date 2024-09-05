@@ -1,0 +1,6 @@
+package com.sandeep.model;
+
+public class Employee {
+	private Integer emp_id,address;
+	private String emp_name,department,base_location;
+}

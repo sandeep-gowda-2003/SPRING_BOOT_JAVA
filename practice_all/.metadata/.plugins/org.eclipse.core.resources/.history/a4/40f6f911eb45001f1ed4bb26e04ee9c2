@@ -1,0 +1,10 @@
+package com.practice.feignclient;
+
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.FeignClient;
+
+@EnableFeignClients
+@FeignClient(name = "MicroService2_Address",url = "http://localhost:8081")
+public class AddressClient {
+
+}

@@ -1,0 +1,7 @@
+package com.sandeep;
+
+public interface Employee {
+	public void display();
+	public int gross_sal();
+	public int netsal();
+}

@@ -1,0 +1,9 @@
+spring.application.name=EurekaServerApplication-practice
+server.port=8761
+eureka.client.fetchRegistry=false
+eureka.client.register-with-eureka=false
+eureka.instance.hostname=localhost
+#
+#
+#management.tracing.sampling.probability=0.1
+#logging.pattern.level=%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]

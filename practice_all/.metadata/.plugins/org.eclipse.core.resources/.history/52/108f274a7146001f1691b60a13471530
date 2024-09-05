@@ -1,0 +1,12 @@
+spring.application.name=MicroService1-Student
+server.port=8081
+
+spring.application.driverClassName=com.postgresql.jdbc.Driver
+spring.datasource.url=jdbc:postgresql://localhost:5432/java_spring
+spring.datasource.username=postgres
+spring.datasource.password=Sandeep@2003
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.generate-ddl=true
+
+

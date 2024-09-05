@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MicroService2_Address&apos; to &apos;MicroService2-Address&apos;" description="Rename resource &apos;MicroService2_Address&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MicroService2_Address" name="MicroService2-Address" stamp="1721412564120" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;MicroService1_Student&apos; to &apos;MicroService1-Student&apos;" description="Rename resource &apos;MicroService1_Student&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MicroService1_Student" name="MicroService1-Student" stamp="1721412609756" updateReferences="true"/>
+</session>
